@@ -1,2 +1,2 @@
 # Lorem-Ipsum
-Projeto Lorem Ipsum
+Projeto Lorem Ipsu
