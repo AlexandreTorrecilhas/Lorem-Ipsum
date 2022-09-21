@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,header,.saiba-mais,.simbolo-pagina{
+    font-family: 'Anton', sans-serif;
+}
+p,span{
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.imagem-fundo{
+    display: none;
+}
+.container{
+    margin: 0px auto;
+    max-width: 1000px;
+}
+.conteudo{
+    position: relative;
+    padding: 5px;
+}
+.sobre-empresa{
+    background-image: url("../../img/nossos-servicos.png");
+    background-size:cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+.conteudo .container{
+    padding: 10px 0px;
+}
+.fala{
+    display: flex;
+    background-color: #F6F6F6;
+}
+.box-fala{
+    width: 100%;
+    margin: 5px 0px;
+    padding: 5px;
+}
+.depoimento{
+    display: flex;
+    align-items: center;
+    
+}
+.functions{
+    display: flex;
+    flex-direction: column;
+}
+.funcionalidades{
+    background: linear-gradient(105.92deg, #515070 -8.44%, #6B69B0 94.86%);
+}
+.funcionalidades h2{
+    text-align: center;
+}
+.group-functions{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.box-functions{
+    display: flex;
+    flex-direction:row;
+    align-items:stretch;
+    margin: 10px 0px;
+}
+.function-image{
+    width: 30%;
+    text-align: center;
+}
+.function-image img{
+    position: relative;
+    top: 30%;  
+}
+.function-text{
+    padding: 3px;
+    width: 70%;
+}
+.call-us{
+    background-color: #F6F6F6;
+}
+@media(max-width: 720px){
+    .container{
+        width: 95%;
+    }
+
+    .fala{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .box-fala{
+        box-shadow: 0px 1px 20px 0.5px gray;
+    }
+    .dados-cliente{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .informacoes-cliente{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .funcionalidades{
+        background: white;
+    }
+    .box-functions{
+        display: flex;
+        flex-direction:row;
+        align-items:stretch;
+        box-shadow: 0px 1px 20px 0.5px gray;
+        margin: 10px 0px;
+    }
+    .function-image{
+        background: linear-gradient(105.92deg, #515070 -8.44%, #6B69B0 94.86%);
+        width: 30%;
+        text-align: center;
+    }
+    .function-image img{
+        position: relative;
+        top: 30%;  
+    }
+    .function-text{
+        padding: 3px;
+        width: 70%;
+    }
+    .function-cell-phone{
+        display: none;
+    }
+    .fale-conosco-imagem{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media(min-width:721px){
+    #area-altura-auto{
+        height: auto;
+    }
+    .container{
+        width: 95%;
+    }
+    .conteudo{
+        height: 600px;
+    }
+    .sobre-empresa{
+        padding: 0px;
+    }
+    .imagem-fundo{
+        display: block;
+    }
+    .conteudo-sobre-imagem{
+        position: absolute;
+        top: 0px;
+        height: 97%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .sobre-nos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+    .informacoes-empresa{
+        width: 40%;
+    }
+    .imagem-sobre-nos{
+        position: relative;
+    }
+    .sobre-empresa{
+        background-image: none;
+    }
+    .fala{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-fala{
+        width: 49%;
+        margin: 0px 2px;
+    }
+    .functions{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .group-functions{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+    }
+
+    .function-cell-phone{
+        position: absolute;
+        left: 32%;
+        bottom: -5px;
+    }
+    #container-conteudo{
+        position: absolute;
+        bottom: 0px;
+        width: 270px;
+        left: 9%;
+    }
+    .fale-conosco{
+        flex-direction: row-reverse;
+    }
+    .fale-conosco-imagem{
+        width: 60%;
+    }
+}
